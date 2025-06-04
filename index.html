@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainFlow Headphones - Thought-Controlled Technology</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <h2>BrainFlow</h2>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#intro" class="nav-link">Introduction</a></li>
+                    <li><a href="#current-state" class="nav-link">Technology</a></li>
+                    <li><a href="#comparison" class="nav-link">Comparison</a></li>
+                    <li><a href="#applications" class="nav-link">Applications</a></li>
+                    <li><a href="#challenges" class="nav-link">Challenges</a></li>
+                    <li><a href="#market" class="nav-link">Market</a></li>
+                    <li><a href="#ethics" class="nav-link">Ethics</a></li>
+                    <li><a href="#future" class="nav-link">Future</a></li>
+                </ul>
+                <button class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Think. Control. Experience.</h1>
+                <p class="hero-subtitle">Revolutionary non-invasive brain-computer interface designed like premium headphones</p>
+                <div class="hero-buttons">
+                    <button class="btn btn--primary btn--lg" onclick="scrollToSection('intro')">Discover Technology</button>
+                    <button class="btn btn--outline btn--lg" onclick="scrollToSection('applications')">See Applications</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section" id="intro">
+        <div class="container">
+            <h2 class="section-title">Revolutionary BCI Technology</h2>
+            <div class="intro-grid">
+                <div class="intro-content">
+                    <p>The BrainFlow Headphones represent a breakthrough in non-invasive brain-computer interface technology. Designed to look and feel like premium headphones, this revolutionary device enables users to control smartphones, computers, and smart home devices using only their thoughts.</p>
+                    <p>Unlike traditional interfaces that require keyboards, touchscreens, or voice commands, our BCI headphones read neural signals directly from your brain through advanced EEG sensors, providing an intuitive, hands-free experience that could transform accessibility and human-computer interaction.</p>
+                    <div class="device-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>14-channel EEG sensors for precise neural signal capture</li>
+                            <li>Wireless connectivity with 9-hour battery life</li>
+                            <li>Dry electrode technology for comfort and ease of use</li>
+                            <li>Real-time signal processing with minimal latency</li>
+                            <li>Premium headphone design for everyday wear</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <div class="device-showcase" id="device-showcase">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1748909761/gpt4o_images/pc1uzeqlli2wcfxb4lee.png" alt="BrainFlow BCI Headphones" class="device-img" id="device-img">
+                        <button class="expand-btn" id="expand-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current State Section -->
+    <section class="section section--alt" id="current-state">
+        <div class="container">
+            <h2 class="section-title">Current State of Non-Invasive BCI</h2>
+            <div class="current-state-grid">
+                <div class="current-state-content">
+                    <p>Electroencephalography (EEG) forms the foundation of non-invasive brain-computer interfaces. This technology captures electrical activity from the brain through sensors placed on the scalp, offering a safe alternative to invasive neural implants.</p>
+                    <p>Recent advancements in high-resolution neural recording, machine learning algorithms, and signal processing have significantly improved the accuracy and usability of EEG-based BCIs, making consumer applications increasingly viable.</p>
+                    <h3>Key Limitations</h3>
+                    <ul>
+                        <li><strong>Signal Attenuation:</strong> The skull reduces signal strength by 10-100x</li>
+                        <li><strong>Spatial Resolution:</strong> Limited ability to pinpoint specific brain regions</li>
+                        <li><strong>Noise Interference:</strong> Environmental and muscular artifacts</li>
+                        <li><strong>Training Requirements:</strong> Users need time to adapt to the system</li>
+                    </ul>
+                </div>
+                <div class="eeg-diagram">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1748909804/gpt4o_images/vatbiyfnx9qpw68zqylb.png" alt="EEG Signal Capture Diagram" class="eeg-img">
+                    <div class="eeg-interactive" id="eeg-interactive">
+                        <div class="eeg-point" data-info="EEG Sensors" style="top: 20%; left: 50%;">
+                            <div class="eeg-tooltip">14-channel dry electrodes capture brain signals</div>
+                        </div>
+                        <div class="eeg-point" data-info="Signal Processor" style="top: 70%; left: 30%;">
+                            <div class="eeg-tooltip">Real-time signal processing and noise filtering</div>
+                        </div>
+                        <div class="eeg-point" data-info="Neural Interface" style="top: 70%; left: 70%;">
+                            <div class="eeg-tooltip">Machine learning algorithms interpret thoughts</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="section" id="comparison">
+        <div class="container">
+            <h2 class="section-title">BCI Technology Comparison</h2>
+            <p class="section-subtitle">Compare our headphone-style BCI with other leading technologies</p>
+            <div class="table-container">
+                <table class="comparison-table" id="comparison-table">
+                    <thead>
+                        <tr>
+                            <th data-column="name">Device <button class="sort-btn">↕</button></th>
+                            <th data-column="price">Price <button class="sort-btn">↕</button></th>
+                            <th data-column="safety">Safety <button class="sort-btn">↕</button></th>
+                            <th data-column="usability">Usability <button class="sort-btn">↕</button></th>
+                            <th data-column="signalQuality">Signal Quality <button class="sort-btn">↕</button></th>
+                            <th data-column="applications">Applications <button class="sort-btn">↕</button></th>
+                        </tr>
+                    </thead>
+                    <tbody id="comparison-tbody">
+                        <!-- Comparison data will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="section section--alt" id="applications">
+        <div class="container">
+            <h2 class="section-title">Applications & Target Markets</h2>
+            <p class="section-subtitle">Transforming lives through thought-controlled technology</p>
+            <div class="applications-grid">
+                <div class="application-card" data-category="accessibility">
+                    <h3>Accessibility</h3>
+                    <p>Assistive technology for individuals with disabilities</p>
+                    <ul>
+                        <li>Wheelchair control</li>
+                        <li>Communication devices</li>
+                        <li>Environmental control</li>
+                        <li>Prosthetic control</li>
+                    </ul>
+                    <span class="target-users">Target: ALS, spinal cord injury, stroke patients</span>
+                </div>
+                <div class="application-card" data-category="gaming">
+                    <h3>Gaming & Entertainment</h3>
+                    <p>Immersive brain-controlled gaming experiences</p>
+                    <ul>
+                        <li>VR/AR control</li>
+                        <li>Character control</li>
+                        <li>Emotion-based gameplay</li>
+                        <li>Neural feedback</li>
+                    </ul>
+                    <span class="target-users">Target: Gamers, entertainment industry</span>
+                </div>
+                <div class="application-card" data-category="smart-home">
+                    <h3>Smart Home</h3>
+                    <p>Hands-free control of connected devices</p>
+                    <ul>
+                        <li>Lighting control</li>
+                        <li>Temperature adjustment</li>
+                        <li>Security systems</li>
+                        <li>Entertainment systems</li>
+                    </ul>
+                    <span class="target-users">Target: General consumers, tech enthusiasts</span>
+                </div>
+                <div class="application-card" data-category="healthcare">
+                    <h3>Healthcare</h3>
+                    <p>Therapeutic and diagnostic applications</p>
+                    <ul>
+                        <li>Stroke rehabilitation</li>
+                        <li>Cognitive training</li>
+                        <li>Mental health monitoring</li>
+                        <li>Neurofeedback therapy</li>
+                    </ul>
+                    <span class="target-users">Target: Patients, healthcare providers</span>
+                </div>
+            </div>
+            <div class="applications-gallery">
+                <img src="https://pplx-res.cloudinary.com/image/upload/v1748909917/gpt4o_images/i1evkdwcfomr4eosvb4s.png" alt="BCI Applications Gallery" class="gallery-img" id="gallery-img">
+                <button class="gallery-btn" id="gallery-btn">Explore Use Cases</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Challenges Section -->
+    <section class="section" id="challenges">
+        <div class="container">
+            <h2 class="section-title">Technical Challenges & Solutions</h2>
+            <div class="challenges-content">
+                <div class="challenges-grid">
+                    <div class="challenge-card">
+                        <h3>Signal Quality</h3>
+                        <p>Low signal-to-noise ratio due to skull attenuation</p>
+                        <div class="solutions">
+                            <strong>Solutions:</strong>
+                            <ul>
+                                <li>Advanced filtering algorithms</li>
+                                <li>Machine learning enhancement</li>
+                                <li>Improved electrode materials</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="challenge-card">
+                        <h3>User Training</h3>
+                        <p>Extensive calibration and adaptation required</p>
+                        <div class="solutions">
+                            <strong>Solutions:</strong>
+                            <ul>
+                                <li>Adaptive algorithms</li>
+                                <li>Reduced training protocols</li>
+                                <li>User-centered design</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="challenge-card">
+                        <h3>Form Factor</h3>
+                        <p>Balancing functionality with comfort and aesthetics</p>
+                        <div class="solutions">
+                            <strong>Solutions:</strong>
+                            <ul>
+                                <li>Miniaturized electronics</li>
+                                <li>Ergonomic design</li>
+                                <li>Wireless technology</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="challenge-card">
+                        <h3>Interference</h3>
+                        <p>Environmental noise and motion artifacts</p>
+                        <div class="solutions">
+                            <strong>Solutions:</strong>
+                            <ul>
+                                <li>Noise cancellation</li>
+                                <li>Artifact rejection</li>
+                                <li>Improved shielding</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-container">
+                <h3>BCI Technology Milestones</h3>
+                <div class="timeline" id="timeline">
+                    <!-- Timeline will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Analysis Section -->
+    <section class="section section--alt" id="market">
+        <div class="container">
+            <h2 class="section-title">Market Analysis</h2>
+            <div class="market-overview">
+                <div class="market-stats">
+                    <div class="stat-card">
+                        <h3>$2.94B</h3>
+                        <p>Current Market Size (2025)</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>$12.40B</h3>
+                        <p>Projected Size (2034)</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>17.35%</h3>
+                        <p>CAGR Growth Rate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="market-chart">
+                <img src="https://pplx-res.cloudinary.com/image/upload/v1748909859/pplx_code_interpreter/93365ff2_shzpwz.jpg" alt="BCI Market Growth Chart" class="chart-img">
+                <div class="chart-interactive" id="chart-interactive">
+                    <!-- Interactive points will be added by JavaScript -->
+                </div>
+            </div>
+            <div class="market-factors">
+                <h3>Growth Factors</h3>
+                <div class="factors-grid">
+                    <div class="factor">
+                        <h4>Aging Population</h4>
+                        <p>Increasing demand for assistive technologies</p>
+                    </div>
+                    <div class="factor">
+                        <h4>Tech Advancement</h4>
+                        <p>Improved accuracy and reduced costs</p>
+                    </div>
+                    <div class="factor">
+                        <h4>Healthcare Focus</h4>
+                        <p>Growing investment in neurological treatments</p>
+                    </div>
+                    <div class="factor">
+                        <h4>Consumer Interest</h4>
+                        <p>Rising awareness and acceptance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ethics Section -->
+    <section class="section" id="ethics">
+        <div class="container">
+            <h2 class="section-title">Ethical Considerations</h2>
+            <div class="ethics-content">
+                <div class="ethics-grid">
+                    <div class="ethics-card">
+                        <h3>Mental Privacy</h3>
+                        <p>Access to thoughts and cognitive processes</p>
+                        <div class="mitigation">
+                            <strong>Mitigation:</strong> Encryption, access controls, user consent
+                        </div>
+                    </div>
+                    <div class="ethics-card">
+                        <h3>Data Security</h3>
+                        <p>Protection of sensitive neural information</p>
+                        <div class="mitigation">
+                            <strong>Mitigation:</strong> Secure storage, anonymization, industry standards
+                        </div>
+                    </div>
+                    <div class="ethics-card">
+                        <h3>Informed Consent</h3>
+                        <p>Understanding implications of neural data sharing</p>
+                        <div class="mitigation">
+                            <strong>Mitigation:</strong> Clear communication, ongoing education, user rights
+                        </div>
+                    </div>
+                    <div class="ethics-card">
+                        <h3>Digital Divide</h3>
+                        <p>Unequal access to cognitive enhancement</p>
+                        <div class="mitigation">
+                            <strong>Mitigation:</strong> Affordable pricing, open-source solutions, public access
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ethics-poll">
+                <h3>Community Poll</h3>
+                <div class="poll-question">
+                    <p>Do you trust thought-based devices with your data?</p>
+                    <div class="poll-options">
+                        <button class="poll-option" data-option="yes">Yes, with proper safeguards</button>
+                        <button class="poll-option" data-option="no">No, too risky</button>
+                        <button class="poll-option" data-option="maybe">Maybe, need more information</button>
+                    </div>
+                    <div class="poll-results" id="poll-results">
+                        <!-- Results will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Outlook Section -->
+    <section class="section section--alt" id="future">
+        <div class="container">
+            <h2 class="section-title">Future Outlook</h2>
+            <div class="future-content">
+                <p>The future of brain-computer interfaces promises unprecedented integration between human cognition and digital technology. As neural signal processing improves and machine learning algorithms become more sophisticated, we anticipate revolutionary advances in accessibility, entertainment, and human augmentation.</p>
+                
+                <div class="future-predictions">
+                    <div class="prediction">
+                        <h3>AR/VR Integration</h3>
+                        <p>Seamless thought control of virtual and augmented reality environments</p>
+                    </div>
+                    <div class="prediction">
+                        <h3>Enhanced Accuracy</h3>
+                        <p>Near-perfect signal interpretation through advanced AI algorithms</p>
+                    </div>
+                    <div class="prediction">
+                        <h3>Mainstream Adoption</h3>
+                        <p>Consumer-friendly designs making BCI accessible to everyone</p>
+                    </div>
+                    <div class="prediction">
+                        <h3>Medical Breakthroughs</h3>
+                        <p>Revolutionary treatments for neurological conditions</p>
+                    </div>
+                </div>
+
+                <div class="future-timeline">
+                    <h3>Projected Developments</h3>
+                    <div class="future-timeline-container" id="future-timeline">
+                        <div class="future-milestone" data-year="2026">
+                            <h4>2026</h4>
+                            <p>First consumer BCI headphones launch</p>
+                        </div>
+                        <div class="future-milestone" data-year="2028">
+                            <h4>2028</h4>
+                            <p>AR/VR BCI integration becomes standard</p>
+                        </div>
+                        <div class="future-milestone" data-year="2030">
+                            <p>Medical BCI applications reach mainstream</p>
+                        </div>
+                        <div class="future-milestone" data-year="2035">
+                            <h4>2035</h4>
+                            <p>Thought-controlled smart cities emerge</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal for expanded views -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="modal-close">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
