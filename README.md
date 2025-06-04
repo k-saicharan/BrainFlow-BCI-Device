@@ -5,7 +5,7 @@
 
 BrainFlow represents the next generation of non-invasive brain-computer interface technology, enabling thought-controlled interaction with digital devices.
 
-🧠 View more : [View Website](https://k-saicharan.github.io/BrainFlow-BCI-Device/)
+🧠  [Click to know about BrainFlow](https://k-saicharan.github.io/BrainFlow-BCI-Device/)
 
 ## ✨ Details covered
 
